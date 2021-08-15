@@ -1,0 +1,2 @@
+﻿Main.obj : error LNK2001: unresolved external symbol "public: __cdecl Database::Database(void)" (??0Database@@QEAA@XZ)
+C:\EstructuraDatos1\ProyectoGrupalED1\ProyectoGrupalED1\x64\Release\ProyectoGrupalED1.exe : fatal error LNK1120: 1 unresolved externals

@@ -1,0 +1,35 @@
+CREATE TABLE JUGADORES
+(
+    correo_electronico VARCHAR(150) NOT NULL PRIMARY KEY,
+    nombre             VARCHAR(50)  not null,
+    apellido           VARCHAR(50)  not null,
+    puntaje            NUMERIC(50)
+);
+
+CREATE TABLE PARTIDAS
+(
+    id_partida     INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_partida VARCHAR(150) not null
+);
+
+CREATE TABLE TABLEROS
+(
+    id_tablero     INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_partida VARCHAR(150) not null,
+    id_partida     int,
+    id_jugador     VARCHAR(150),
+    CONSTRAINT FK_idPartida FOREIGN KEY (id_partida)
+        REFERENCES PARTIDAS (id_partida),
+    CONSTRAINT FK_idJugador FOREIGN KEY (id_jugador)
+        REFERENCES JUGADORES (correo_electronico)
+);
+
+CREATE TABLE CELDAS
+(
+    id_celda     INT AUTO_INCREMENT PRIMARY KEY,
+    posicion int(150) not null,
+    estado     VARCHAR(150) not null,
+    id_tablero     int,
+    CONSTRAINT FK_idTablero FOREIGN KEY (id_tablero)
+        REFERENCES TABLEROS (id_tablero)
+);
