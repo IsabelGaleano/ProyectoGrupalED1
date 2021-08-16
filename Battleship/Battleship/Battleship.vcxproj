@@ -143,7 +143,7 @@
     <ClCompile Include="Cola.cpp" />
     <ClCompile Include="Lista.cpp" />
     <ClCompile Include="Nodo.cpp" />
-    <ClCompile Include="PilaRecords.cpp" />
+    <ClCompile Include="Pila.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cola.h" />
@@ -151,7 +151,7 @@
     <ClInclude Include="Nodo.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="PilaRecords.h" />
+    <ClInclude Include="Pila.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

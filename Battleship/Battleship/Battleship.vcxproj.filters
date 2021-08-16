@@ -27,7 +27,7 @@
     <ClCompile Include="Lista.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PilaRecords.cpp">
+    <ClCompile Include="Pila.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -43,7 +43,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="PilaRecords.h">
+    <ClInclude Include="Pila.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
