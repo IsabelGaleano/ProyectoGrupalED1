@@ -1,5 +1,4 @@
-#ifndef LISTA_H
-#define LISTA_H
+#pragma once
 
 #include "Nodo.h"
 #include <iostream>
@@ -7,23 +6,19 @@ using namespace std;
 
 class Lista
 {
-private:
-	Nodo* cabeza;
 public:
 	Lista();
-	void Agregar(int);
-
-	bool Buscar(int);
-
-	void EliminarDatosNodo();
+	void Agregar(string);
+	//bool Buscar(int);
 
 	string Mostrar();
 
 
 	Nodo* getCabeza();
 	void setCabeza(Nodo* cabeza);
-	
 
-	int size;
+
+	int size = 0;
+private:
+	Nodo* cabeza;
 };
-#endif

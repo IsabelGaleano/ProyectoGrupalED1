@@ -9,10 +9,10 @@ Lista::Lista() {
 }
 
 
-void Lista::Agregar(int _val) {
-	size++;
+void Lista::Agregar(string _val) {
+	//size++;
 	Nodo* temp = new Nodo();
-
+	temp->setData(_val);
 	if (getCabeza() == NULL) {
 		cabeza = temp;
 	}
@@ -22,27 +22,39 @@ void Lista::Agregar(int _val) {
 	}
 }
 
+
+
 string Lista::Mostrar() {
 	string result = "";
 	Nodo* aux = getCabeza();
-
+	int count = 1;
 	while (aux != NULL)
 	{
-		result += to_string(aux->getInfo()) + "\n";
+		if (count == 6) {
+			result += "|\n";
+		}
+		else if (count == 11) {
+			result += "|\n";
+		}
+		else if (count == 16) {
+			result += "|\n";
+		}
+		result += aux->getData() + "\t";
 		aux = aux->getSig();
+		count++;
 	}
 	return result;
 }
 
-bool Lista::Buscar(int _val) {
-	bool result;
-	Nodo* aux = getCabeza();
-	while (aux != NULL)
-	{
-		
-	}
-	return ;
-}
+//bool Lista::Buscar(int _val) {
+//	bool result;
+//	Nodo* aux = getCabeza();
+//	while (aux != NULL)
+//	{
+//		
+//	}
+//	return ;
+//}
 
 
 Nodo* Lista::getCabeza() {
