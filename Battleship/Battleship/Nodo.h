@@ -8,6 +8,7 @@ private:
 	Nodo* sig;
 public:
 	Nodo();
+	Nodo(int);
 	void setInfo(int x);
 	int getInfo();
 
