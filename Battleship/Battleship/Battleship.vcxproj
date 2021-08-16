@@ -140,7 +140,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Battleship.cpp" />
+    <ClCompile Include="Cola.cpp" />
+    <ClCompile Include="Lista.cpp" />
+    <ClCompile Include="Nodo.cpp" />
     <ClCompile Include="PilaRecords.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cola.h" />
+    <ClInclude Include="Lista.h" />
+    <ClInclude Include="Nodo.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PilaRecords.h" />

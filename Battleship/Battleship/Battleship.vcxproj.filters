@@ -18,9 +18,29 @@
     <ClCompile Include="Battleship.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Nodo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cola.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lista.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="PilaRecords.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Nodo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cola.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lista.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PilaRecords.h">
