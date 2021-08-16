@@ -12,6 +12,7 @@ int main() {
 	//database->setJugador(jugador);
 	//database->insertarJugador("mey@gmail.com", "Mey", "Galeano", 0);
 	//database->insertarPartida("PartidaBuddy");
+
 	database->insertarTablero("PartidaBuddy", 1, "isa@gmail.com");
 	database->mostrarJugadores();
 	
